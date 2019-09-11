@@ -45,8 +45,10 @@ export default {
 
   article {
     border: 2px solid red;
-    width: auto;
+    width: 200px;
     height: 200px;
     padding: 10px;
+    margin-right:50px;
+    font-weight: bold;;
   }
 </style>
