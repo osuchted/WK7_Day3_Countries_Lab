@@ -1,9 +1,13 @@
 <template lang="html">
   <article v-if="country">
-    <p>{{ country.name }}</p>
+    <h1>{{ country.name }}</h1>
     <p>{{ country.capital }}</p>
     <p>{{ country.region }}</p>
     <p>{{ country.population }}</p>
+    <p>{{ country.region }}</p>
+    <em>Language</em>
+    <p>{{ country.languages[0].name }}</p>
+    <p><img :src="country.flag" style="width:50%; height:50%"/></p>
   </article>
 </template>
 
@@ -15,4 +19,7 @@ export default {
 </script>
 
 <style lang="css" scoped>
+em {
+  color:red;
+}
 </style>

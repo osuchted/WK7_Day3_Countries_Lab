@@ -15,6 +15,7 @@ import { eventBus } from './main.js'
 
 export default {
   name: 'app',
+  props: ['country'],
   data() {
     return {
       countries: [],
@@ -41,14 +42,18 @@ export default {
   .main-container {
     display: flex;
     justify-content: space-between;
+    font-family: sans-serif;;
   }
 
   article {
-    border: 2px solid red;
-    width: 200px;
-    height: 200px;
+    border: 2px dashed navy;
+    width: 300px;
+    height: 400px;
     padding: 10px;
     margin-right:50px;
-    font-weight: bold;;
+    font-weight: normal;
+    border-radius: 10px;
   }
+
+
 </style>
